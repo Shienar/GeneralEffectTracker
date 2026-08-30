@@ -594,9 +594,9 @@ function UniversalTracker.InitSettings()
 	local function loadTrackerList(savedVarTrackerListTable, isCharSettings)
 		local insertIndex
 		if isCharSettings then
-			insertIndex = settings:GetIndexOf(accountTrackersLabel, true) + 1
-		else
 			insertIndex = settings:GetIndexOf(characterTrackersLabel, true) + 1
+		else
+			insertIndex = settings:GetIndexOf(accountTrackersLabel, true) + 1
 		end
 
 		for k, v in pairs(savedVarTrackerListTable) do
